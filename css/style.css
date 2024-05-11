@@ -1,0 +1,224 @@
+body { 
+    background-color: #000000; /*faf6f3;/*0B141A*/
+    background-image: url("../images/background_whatsapp.png");
+    /*background-repeat: repeat;*/
+    /*backdrop-filter: opacity(70%) invert(65%) brightess(105%) contrast(190%) grayscale(100%) sepia(10%);*/
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Segoe UI,Helvetica Neue,Helvetica,Lucida Grande,Arial,Ubuntu,Cantarell,Fira Sans,sans-serif;
+    overflow-y: scroll;
+}
+
+body, html {
+    height: 100%;
+}
+
+nav {
+    background-color: #005E54;/*#fefefe;/*#202C33;*/
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+
+.attachments {
+    width: 100%;
+}
+
+.attachments > div {
+    overflow: hidden;
+}
+
+.actions {
+    color: white;/*1c1c1c;*/
+    float: right;
+    margin-right: 26px;
+}
+
+.camera {
+    transform: translate(-1px, -1px);
+}
+
+.back {
+    color: white;/*1c1c1c;*/
+    margin-left: 5px;
+}
+
+.avatar {
+    margin: 5px 0 8px 5px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    padding: 1px;
+}
+
+.avatar img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.name-card {
+    color: white; /*#1c1c1c; */
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 0.3px;
+    width: 250px;
+    margin-left: 10px;
+    line-height: 25px;
+    white-space: nowrap;
+}
+
+.field {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.status {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.message-status {
+    padding-top: 15px;
+    padding-left: 10px;
+    float: right;
+    margin-bottom: -10px;
+}
+
+.content {
+    color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 110px;
+}
+
+.messages-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.bot-message {
+    background-color: #fff;/*#202C33;*/
+    padding: 8px 8px 15px 10px;
+    border-radius: 8px;
+    margin-top: 3px;
+    float: left;
+}
+
+.user-message {
+    background-color: #d8fdd2;/*#005C4B;*/
+    padding: 8px 15px 15px 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-bottom: 12px;
+    float: right;
+}
+
+.user-button {
+    color: white;
+    padding: 8px 15px;
+    border-radius: 2px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 12px;
+    border: #005C4B;
+    float: right;
+    animation: color-rainbow 1s forwards;
+    animation-iteration-count: infinite;
+}
+
+.user-button:hover {
+    transform: scale(1.2);
+    transition: 0.3s ease;
+}
+
+.link {
+    text-decoration: underline #155592;
+    color: #155592;
+}
+
+.img, iframe{
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.hour {
+    color: #6E767A;
+    font-size: 0.65em;
+}
+
+.read-confirmation {
+    width: 18px;
+    height: auto;
+    margin-bottom: -6px;
+    margin-left: 3px;
+    margin-right: -7px;
+}
+
+.scroller{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.717);
+    right: 1.2vh;
+    bottom: 5.2vh;
+    position: fixed;
+}
+
+.audio-message{
+    border-radius: 1%;
+    color: white;
+}
+
+.message-img {
+    color: white;
+}
+
+audio::-webkit-media-controls-enclosure{
+    background-color: #ffffff00;
+}
+
+@keyframes color-rainbow {
+    0% {background-color: #005C4B;}
+    10% {background-color: #044d40;}
+    20% {background-color: #054337;}
+    30% {background-color: #07463a;}
+    40% {background-color: #0c4137;}
+    50% {background-color: #0d473c;}
+    60% {background-color: #115a4d;}
+    70% {background-color: #156b5b;}
+    80% {background-color: #1c7d6b;}
+    90% {background-color: #1e8b77;}
+    100% {background-color: #1e9e87;}
+}
+@media screen and (max-width: 450px) {
+    .camera {
+        display: none;
+    }
+}
+@media screen and (max-width: 400px) {
+    .telephone {
+        display: none;
+    }
+}
+@media screen and (min-width: 600px){
+    .messages-field {
+        width: 90%;
+    }
+}
+@media screen and (min-width: 1150px){
+    .messages-field {
+        width: 1000px;
+    }
+}
